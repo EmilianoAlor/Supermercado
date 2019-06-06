@@ -1,0 +1,6 @@
+CREATE TABLE `supermercado`.`pedidos` ( 
+`IDdelPedido` INT NOT NULL AUTO_INCREMENT , 
+`IDusuario` INT NOT NULL , 
+`FechaYhoraDelPedido` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,  
+`PrecioTotalDelPedido` DOUBLE NOT NULL , 
+`CancelarElPedido` BOOLEAN NOT NULL , PRIMARY KEY (`IDdelPedido`)) ENGINE = InnoDB;
